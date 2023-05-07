@@ -1,0 +1,840 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/sdkconfig
+-- App "uart_async_rxtxtasks" version: 24ea192-dirty
+-- Adding linker script /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_netif esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl lvgl_esp32_drivers lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport touch_element ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: /Users/luyetong/esp/esp-idf/components/app_trace /Users/luyetong/esp/esp-idf/components/app_update /Users/luyetong/esp/esp-idf/components/bootloader /Users/luyetong/esp/esp-idf/components/bootloader_support /Users/luyetong/esp/esp-idf/components/bt /Users/luyetong/esp/esp-idf/components/cmock /Users/luyetong/esp/esp-idf/components/console /Users/luyetong/esp/esp-idf/components/cxx /Users/luyetong/esp/esp-idf/components/driver /Users/luyetong/esp/esp-idf/components/efuse /Users/luyetong/esp/esp-idf/components/esp-tls /Users/luyetong/esp/esp-idf/components/esp_adc /Users/luyetong/esp/esp-idf/components/esp_app_format /Users/luyetong/esp/esp-idf/components/esp_common /Users/luyetong/esp/esp-idf/components/esp_eth /Users/luyetong/esp/esp-idf/components/esp_event /Users/luyetong/esp/esp-idf/components/esp_gdbstub /Users/luyetong/esp/esp-idf/components/esp_hid /Users/luyetong/esp/esp-idf/components/esp_http_client /Users/luyetong/esp/esp-idf/components/esp_http_server /Users/luyetong/esp/esp-idf/components/esp_https_ota /Users/luyetong/esp/esp-idf/components/esp_https_server /Users/luyetong/esp/esp-idf/components/esp_hw_support /Users/luyetong/esp/esp-idf/components/esp_lcd /Users/luyetong/esp/esp-idf/components/esp_local_ctrl /Users/luyetong/esp/esp-idf/components/esp_netif /Users/luyetong/esp/esp-idf/components/esp_partition /Users/luyetong/esp/esp-idf/components/esp_phy /Users/luyetong/esp/esp-idf/components/esp_pm /Users/luyetong/esp/esp-idf/components/esp_psram /Users/luyetong/esp/esp-idf/components/esp_ringbuf /Users/luyetong/esp/esp-idf/components/esp_rom /Users/luyetong/esp/esp-idf/components/esp_system /Users/luyetong/esp/esp-idf/components/esp_timer /Users/luyetong/esp/esp-idf/components/esp_wifi /Users/luyetong/esp/esp-idf/components/espcoredump /Users/luyetong/esp/esp-idf/components/esptool_py /Users/luyetong/esp/esp-idf/components/fatfs /Users/luyetong/esp/esp-idf/components/freertos /Users/luyetong/esp/esp-idf/components/hal /Users/luyetong/esp/esp-idf/components/heap /Users/luyetong/esp/esp-idf/components/http_parser /Users/luyetong/esp/esp-idf/components/idf_test /Users/luyetong/esp/esp-idf/components/ieee802154 /Users/luyetong/esp/esp-idf/components/json /Users/luyetong/esp/esp-idf/components/log /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl_esp32_drivers /Users/luyetong/esp/esp-idf/components/lwip /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/main /Users/luyetong/esp/esp-idf/components/mbedtls /Users/luyetong/esp/esp-idf/components/mqtt /Users/luyetong/esp/esp-idf/components/newlib /Users/luyetong/esp/esp-idf/components/nvs_flash /Users/luyetong/esp/esp-idf/components/openthread /Users/luyetong/esp/esp-idf/components/partition_table /Users/luyetong/esp/esp-idf/components/perfmon /Users/luyetong/esp/esp-idf/components/protobuf-c /Users/luyetong/esp/esp-idf/components/protocomm /Users/luyetong/esp/esp-idf/components/pthread /Users/luyetong/esp/esp-idf/components/sdmmc /Users/luyetong/esp/esp-idf/components/soc /Users/luyetong/esp/esp-idf/components/spi_flash /Users/luyetong/esp/esp-idf/components/spiffs /Users/luyetong/esp/esp-idf/components/tcp_transport /Users/luyetong/esp/esp-idf/components/touch_element /Users/luyetong/esp/esp-idf/components/ulp /Users/luyetong/esp/esp-idf/components/unity /Users/luyetong/esp/esp-idf/components/usb /Users/luyetong/esp/esp-idf/components/vfs /Users/luyetong/esp/esp-idf/components/wear_levelling /Users/luyetong/esp/esp-idf/components/wifi_provisioning /Users/luyetong/esp/esp-idf/components/wpa_supplicant /Users/luyetong/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build
+[1/1275] Generating project_elf_src_esp32s3.c
+[2/1275] Generating memory.ld linker script...
+[3/1275] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+factory,app,factory,0x10000,1M,
+*******************************************************************************
+[4/1275] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_utils.c.obj
+[5/1275] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_header.c.obj
+[6/1275] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib/http_auth.c.obj
+[7/1275] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_internal.c.obj
+[8/1275] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport.c.obj
+[9/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.obj
+[10/1275] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ssl.c.obj
+[11/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.obj
+[12/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.obj
+[13/1275] Building C object esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir/transport_ws.c.obj
+[14/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.obj
+[15/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.obj
+[16/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj
+[17/1275] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj
+[18/1275] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp-tls-crypto/esp_tls_crypto.c.obj
+[19/1275] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_error_capture.c.obj
+[20/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj
+[21/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj
+[22/1275] Building C object esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj
+[23/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj
+[24/1275] Building C object esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/esp_http_client.c.obj
+[25/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj
+[26/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj
+[27/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj
+[28/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj
+[29/1275] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls_mbedtls.c.obj
+[30/1275] Building C object esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp_tls.c.obj
+[31/1275] Building C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/packet.c.obj
+[32/1275] Building ASM object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/xtensa/gdbstub-entry.S.obj
+[33/1275] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj
+[34/1275] Building ASM object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/xtensa/xt_debugexception.S.obj
+[35/1275] Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj
+[36/1275] Building C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/xtensa/gdbstub_xtensa.c.obj
+[37/1275] Building C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/gdbstub.c.obj
+[38/1275] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_phy_802_3.c.obj
+[39/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/md/esp_md.c.obj
+[40/1275] Building C object esp-idf/ulp/CMakeFiles/__idf_ulp.dir/ulp_common/ulp_common.c.obj
+[41/1275] Building C object esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/esp_common/gdbstub_common.c.obj
+[42/1275] Building C object esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj
+[43/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_create.c.obj
+[44/1275] Linking C static library esp-idf/ulp/libulp.a
+[45/1275] Linking C static library esp-idf/esp_https_ota/libesp_https_ota.a
+[46/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/debug.c.obj
+[47/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crl.c.obj
+[48/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_csr.c.obj
+[49/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509.c.obj
+[50/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_crt.c.obj
+[51/1275] Linking C static library esp-idf/esp_http_server/libesp_http_server.a
+[52/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509write_csr.c.obj
+[53/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cache.c.obj
+[54/1275] Linking C static library esp-idf/esp_http_client/libesp_http_client.a
+[55/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ciphersuites.c.obj
+[56/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_cookie.c.obj
+[57/1275] Linking C static library esp-idf/tcp_transport/libtcp_transport.a
+[58/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_ticket.c.obj
+[59/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_client.c.obj
+[60/1275] Building C object esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj
+[61/1275] Linking C static library esp-idf/esp_gdbstub/libesp_gdbstub.a
+[62/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj
+[63/1275] Linking C static library esp-idf/esp_eth/libesp_eth.a
+[64/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj
+[65/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_client.c.obj
+[66/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls13_generic.c.obj
+[67/1275] Linking C static library esp-idf/esp_adc/libesp_adc.a
+[68/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/mbedtls_debug.c.obj
+[69/1275] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[70/1275] Linking C static library esp-idf/esp-tls/libesp-tls.a
+[71/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_client.c.obj
+[72/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_msg.c.obj
+[73/1275] Linking C static library esp-idf/http_parser/libhttp_parser.a
+[74/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/x509_crt.c.obj
+[75/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[76/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[77/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/net_sockets.c.obj
+[78/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[79/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[80/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls12_server.c.obj
+[81/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[82/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[83/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s3.c.obj
+[84/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[85/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[86/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[87/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[88/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[89/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s3.c.obj
+[90/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aesni.c.obj
+[91/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/idf/bootloader_sha.c.obj
+[92/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[93/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aes.c.obj
+[94/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1parse.c.obj
+[95/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/camellia.c.obj
+[96/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/base64.c.obj
+[97/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/asn1write.c.obj
+[98/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chacha20.c.obj
+[99/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/chachapoly.c.obj
+[100/1275] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[101/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/aria.c.obj
+[102/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ccm.c.obj
+[103/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/des.c.obj
+[104/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/dhm.c.obj
+[105/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher_wrap.c.obj
+[106/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj
+[107/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecjpake.c.obj
+[108/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cmac.c.obj
+[109/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ctr_drbg.c.obj
+[110/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/constant_time.c.obj
+[111/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdh.c.obj
+[112/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/cipher.c.obj
+[113/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj
+[114/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj
+[115/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_regi2c.c.obj
+[116/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj
+[117/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj
+[118/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecdsa.c.obj
+[119/1275] Building ASM object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj
+[120/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+[121/1275] Building C object esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj
+[122/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj
+[123/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[124/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/efuse_hal.c.obj
+[125/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[126/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[127/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj
+[128/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.obj
+[129/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal.c.obj
+[130/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal_iram.c.obj
+[131/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal.c.obj
+[132/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hal_iram.c.obj
+[133/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/bignum.c.obj
+[134/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal.c.obj
+[135/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_hal_iram.c.obj
+[136/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ledc_hal_iram.c.obj
+[137/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gpio_hal.c.obj
+[138/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal_iram.c.obj
+[139/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.obj
+[140/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_encrypt_hal_iram.c.obj
+[141/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2c_hal.c.obj
+[142/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj
+[143/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal.c.obj
+[144/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal.c.obj
+[145/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal_common.c.obj
+[146/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/rmt_hal.c.obj
+[147/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/systimer_hal.c.obj
+[148/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/pcnt_hal.c.obj
+[149/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_oneshot_hal.c.obj
+[150/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_iram.c.obj
+[151/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj
+[152/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mcpwm_hal.c.obj
+[153/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/sdm_hal.c.obj
+[154/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/gdma_hal.c.obj
+[155/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj
+[156/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/ds_hal.c.obj
+[157/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/lcd_hal.c.obj
+[158/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp.c.obj
+[159/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_hal.c.obj
+[160/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj
+[161/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/aes_hal.c.obj
+[162/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/xt_wdt_hal.c.obj
+[163/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usb_phy_hal.c.obj
+[164/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_flash_hal_gpspi.c.obj
+[165/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/i2s_hal.c.obj
+[166/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/adc_hal.c.obj
+[167/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/brownout_hal.c.obj
+[168/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/hmac_hal.c.obj
+[169/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ecp_curves.c.obj
+[170/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/rtc_cntl_hal.c.obj
+[171/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj
+[172/1275] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_app_desc.c.obj
+[173/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/spi_slave_hd_hal.c.obj
+[174/1275] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj
+[175/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj
+[176/1275] Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj
+[177/1275] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/usbh_hal.c.obj
+[178/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_timing_config.c.obj
+[179/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_drivers.c.obj
+[180/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_issi.c.obj
+[181/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_timing_tuning.c.obj
+[182/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj
+[183/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_gd.c.obj
+[184/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic.c.obj
+[185/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_boya.c.obj
+[186/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj
+[187/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj
+[188/1275] Building C object esp-idf/app_update/CMakeFiles/__idf_app_update.dir/esp_ota_ops.c.obj
+[189/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/flash_ops_esp32s3.c.obj
+[190/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/memspi_host_driver.c.obj
+[191/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj
+[192/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_ops.c.obj
+[193/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj
+[194/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_generic.c.obj
+[195/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj
+[196/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj
+[197/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_mmap.c.obj
+[198/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[199/1275] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_cond_var.c.obj
+[200/1275] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_rwlock.c.obj
+[201/1275] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread_local_storage.c.obj
+[202/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj
+[203/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/crosscore_int.c.obj
+[204/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_ipc.c.obj
+[205/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/freertos_hooks.c.obj
+[206/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/system_time.c.obj
+[207/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/int_wdt.c.obj
+[208/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_system.c.obj
+[209/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj
+[210/1275] Building C object esp-idf/pthread/CMakeFiles/__idf_pthread.dir/pthread.c.obj
+[211/1275] Building C object esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj
+[212/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/debug_stubs.c.obj
+[213/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/panic.c.obj
+[214/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/ubsan.c.obj
+[215/1275] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/highint_hdl.S.obj
+[216/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/xt_wdt.c.obj
+[217/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/brownout.c.obj
+[218/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/panic_handler.c.obj
+[219/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/startup.c.obj
+[220/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/reset_reason.c.obj
+[221/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/cache_err_int.c.obj
+[222/1275] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_handler_asm.S.obj
+[223/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/system_internal.c.obj
+[224/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/apb_backup_dma.c.obj
+[225/1275] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers_asm.S.obj
+[226/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s3/clk.c.obj
+[227/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt.c.obj
+[228/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/cpu_start.c.obj
+[229/1275] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack_asm.S.obj
+[230/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_helpers.c.obj
+[231/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/debug_stubs.c.obj
+[232/1275] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_handler.S.obj
+[233/1275] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr_routines.S.obj
+[234/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/expression_with_stack.c.obj
+[235/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj
+[236/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/trax.c.obj
+[237/1275] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/system_time.c.obj
+[238/1275] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/esp_ipc_isr.c.obj
+[239/1275] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/ets_timer_legacy.c.obj
+[240/1275] Building C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/default_event_loop.c.obj
+[241/1275] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer_impl_systimer.c.obj
+[242/1275] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_exception_stubs.cpp.obj
+[243/1275] Building C object esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src/esp_timer.c.obj
+[244/1275] Building C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/esp_event_private.c.obj
+[245/1275] Building C object esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src/esp_err_to_name.c.obj
+[246/1275] Building C object esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir/esp_event.c.obj
+[247/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition.cpp.obj
+[248/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_lookup.cpp.obj
+[249/1275] Building CXX object esp-idf/cxx/CMakeFiles/__idf_cxx.dir/cxx_guards.cpp.obj
+[250/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_item_hash_list.cpp.obj
+[251/1275] Building C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_override.c.obj
+[252/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_pagemanager.cpp.obj
+[253/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_cxx_api.cpp.obj
+[254/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_locked.cpp.obj
+[255/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_handle_simple.cpp.obj
+[256/1275] Building C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/lib_printf.c.obj
+[257/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_page.cpp.obj
+[258/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/uart_periph.c.obj
+[259/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_storage.cpp.obj
+[260/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_otg_periph.c.obj
+[261/1275] Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj
+[262/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/usb_periph.c.obj
+[263/1275] Building C object esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj
+[264/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_api.cpp.obj
+[265/1275] Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_uart.c.obj
+[266/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[267/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+[268/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_ctrl_os.c.obj
+[269/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/hw_random.c.obj
+[270/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_clk.c.obj
+[271/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj
+[272/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_mac_bb.c.obj
+[273/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_gpio.c.obj
+[274/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/periph_ctrl.c.obj
+[275/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_module.c.obj
+[276/1275] Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj
+[277/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/intr_alloc.c.obj
+[278/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/regi2c_ctrl.c.obj
+[279/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.obj
+[280/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/adc_share_hw_ctrl.c.obj
+[281/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/async_memcpy_impl_gdma.c.obj
+[282/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_retention.c.obj
+[283/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_async_memcpy.c.obj
+[284/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_pm.c.obj
+[285/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+[286/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+[287/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+[288/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+[289/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+[290/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+[291/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj
+[292/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/gdma.c.obj
+[293/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_crypto_lock.c.obj
+[294/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_hmac.c.obj
+[295/1275] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/portasm.S.obj
+[296/1275] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_context.S.obj
+[297/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.obj
+[298/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_ds.c.obj
+[299/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_init.c.obj
+[300/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/croutine.c.obj
+[301/1275] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_vector_defaults.S.obj
+[302/1275] Building ASM object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S.obj
+[303/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/xtensa_overlay_os_hook.c.obj
+[304/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/port_systick.c.obj
+[305/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/port.c.obj
+[306/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/port_common.c.obj
+[307/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/list.c.obj
+[308/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/event_groups.c.obj
+[309/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-openocd.c.obj
+[310/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions/freertos_v8_compat.c.obj
+[311/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/timers.c.obj
+[312/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/abort.c.obj
+[313/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/stream_buffer.c.obj
+[314/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/assert.c.obj
+[315/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/heap.c.obj
+[316/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/queue.c.obj
+[317/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/poll.c.obj
+[318/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/pthread.c.obj
+[319/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/random.c.obj
+[320/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/locks.c.obj
+[321/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/reent_init.c.obj
+[322/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_types.cpp.obj
+[323/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/newlib_init.c.obj
+[324/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/termios.c.obj
+[325/1275] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.obj
+[326/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/syscalls.c.obj
+[327/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/sysconf.c.obj
+[328/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/realpath.c.obj
+[329/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/time.c.obj
+[330/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/port/esp_time_impl.c.obj
+[331/1275] Building C object esp-idf/newlib/CMakeFiles/__idf_newlib.dir/stdatomic.c.obj
+[332/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/bitfield.c.obj
+[333/1275] Building CXX object esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src/nvs_partition_manager.cpp.obj
+[334/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-siv.c.obj
+[335/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-kdf.c.obj
+[336/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/crypto_ops.c.obj
+[337/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_group5.c.obj
+[338/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-gcm.c.obj
+[339/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ccmp.c.obj
+[340/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/dh_groups.c.obj
+[341/1275] Building C object esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/tasks.c.obj
+[342/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/wpa_common.c.obj
+[343/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-tlsprf.c.obj
+[344/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-tlsprf.c.obj
+[345/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/ms_funcs.c.obj
+[346/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha384-tlsprf.c.obj
+[347/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha256-prf.c.obj
+[348/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-prf.c.obj
+[349/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha384-prf.c.obj
+[350/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/chap.c.obj
+[351/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/sha1-tprf.c.obj
+[352/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_common/eap_wsc_common.c.obj
+[353/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/md4-internal.c.obj
+[354/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/ieee802_11_common.c.obj
+[355/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_common.c.obj
+[356/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap_common.c.obj
+[357/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls.c.obj
+[358/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_mschapv2.c.obj
+[359/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/mschapv2.c.obj
+[360/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap.c.obj
+[361/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast_common.c.obj
+[362/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_tls_common.c.obj
+[363/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_peap.c.obj
+[364/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/pmksa_cache.c.obj
+[365/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/base64.c.obj
+[366/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_ttls.c.obj
+[367/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/ext_password.c.obj
+[368/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa_ie.c.obj
+[369/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast_pac.c.obj
+[370/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/uuid.c.obj
+[371/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/common.c.obj
+[372/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpa_debug.c.obj
+[373/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/wpabuf.c.obj
+[374/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps.c.obj
+[375/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils/json.c.obj
+[376/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_process.c.obj
+[377/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_parse.c.obj
+[378/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_attr_build.c.obj
+[379/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer/eap_fast.c.obj
+[380/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_common.c.obj
+[381/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_dev_attr.c.obj
+[382/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpas_glue.c.obj
+[383/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_common.c.obj
+[384/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp/wpa.c.obj
+[385/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa3.c.obj
+[386/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa_main.c.obj
+[387/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_owe.c.obj
+[388/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_hostap.c.obj
+[389/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps/wps_enrollee.c.obj
+[390/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-omac1.c.obj
+[391/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-bignum.c.obj
+[392/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wpa2.c.obj
+[393/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/rc4.c.obj
+[394/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/des-internal.c.obj
+[395/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-rsa.c.obj
+[396/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls.c.obj
+[397/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/tls_mbedtls.c.obj
+[398/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/coexist.c.obj
+[399/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/esp_wps.c.obj
+[400/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/mesh_event.c.obj
+[401/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-wrap.c.obj
+[402/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-unwrap.c.obj
+[403/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig.c.obj
+[404/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto/aes-ccm.c.obj
+[405/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default_ap.c.obj
+[406/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_netif.c.obj
+[407/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_init.c.obj
+[408/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/smartconfig_ack.c.obj
+[409/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src/wifi_default.c.obj
+[410/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto/crypto_mbedtls-ec.c.obj
+[411/1275] Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_console.c.obj
+[412/1275] Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_usb_serial_jtag.c.obj
+[413/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/sntp/sntp.c.obj
+[414/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/err.c.obj
+[415/1275] Building C object esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32s3/esp_adapter.c.obj
+[416/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/if_api.c.obj
+[417/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/netbuf.c.obj
+[418/1275] Linking C static library esp-idf/esp_wifi/libesp_wifi.a
+[419/1275] Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj
+[420/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/netifapi.c.obj
+[421/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/netdb.c.obj
+[422/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/api_lib.c.obj
+[423/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/tcpip.c.obj
+[424/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/def.c.obj
+[425/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/sntp/sntp.c.obj
+[426/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/netbiosns/netbiosns.c.obj
+[427/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/inet_chksum.c.obj
+[428/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/init.c.obj
+[429/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ip.c.obj
+[430/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/api_msg.c.obj
+[431/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/mem.c.obj
+[432/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/memp.c.obj
+[433/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/stats.c.obj
+[434/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/sys.c.obj
+[435/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/dns.c.obj
+[436/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/raw.c.obj
+[437/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/pbuf.c.obj
+[438/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/timeouts.c.obj
+[439/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/netif.c.obj
+[440/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/autoip.c.obj
+[441/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/icmp.c.obj
+[442/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/udp.c.obj
+[443/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_out.c.obj
+[444/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/etharp.c.obj
+[445/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/igmp.c.obj
+[446/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4.c.obj
+[447/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp_in.c.obj
+[448/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/tcp.c.obj
+[449/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api/sockets.c.obj
+[450/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_napt.c.obj
+[451/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/dhcp6.c.obj
+[452/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_frag.c.obj
+[453/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/inet6.c.obj
+[454/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ethip6.c.obj
+[455/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/ip4_addr.c.obj
+[456/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4/dhcp.c.obj
+[457/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/icmp6.c.obj
+[458/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6_frag.c.obj
+[459/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/bridgeif.c.obj
+[460/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6_addr.c.obj
+[461/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ethernet.c.obj
+[462/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/bridgeif_fdb.c.obj
+[463/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/mld6.c.obj
+[464/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/auth.c.obj
+[465/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ccp.c.obj
+[466/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap-md5.c.obj
+[467/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/slipif.c.obj
+[468/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap-new.c.obj
+[469/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/chap_ms.c.obj
+[470/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/demand.c.obj
+[471/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/ip6.c.obj
+[472/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ecp.c.obj
+[473/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/eap.c.obj
+[474/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/fsm.c.obj
+[475/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipv6cp.c.obj
+[476/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/eui64.c.obj
+[477/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ipcp.c.obj
+[478/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/lcp.c.obj
+[479/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/magic.c.obj
+[480/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/mppe.c.obj
+[481/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/ppp.c.obj
+[482/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/multilink.c.obj
+[483/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppapi.c.obj
+[484/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppol2tp.c.obj
+[485/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppoe.c.obj
+[486/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppcrypt.c.obj
+[487/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/pppos.c.obj
+[488/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/upap.c.obj
+[489/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/vj.c.obj
+[490/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/utils.c.obj
+[491/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32/hooks/tcp_isn_default.c.obj
+[492/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32/hooks/lwip_default_hooks.c.obj
+[493/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32/sockets_ext.c.obj
+[494/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32/vfs_lwip.c.obj
+[495/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/esp_ping.c.obj
+[496/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32/freertos/sys_arch.c.obj
+[497/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32/debug/lwip_debug.c.obj
+[498/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/ping.c.obj
+[499/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_handlers.c.obj
+[500/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_objects.c.obj
+[501/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6/nd6.c.obj
+[502/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/esp_netif_defaults.c.obj
+[503/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_lwip_defaults.c.obj
+[504/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/loopback/esp_netif_loopback.c.obj
+[505/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping/ping_sock.c.obj
+[506/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/wlanif.c.obj
+[507/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/esp_pbuf_ref.c.obj
+[508/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif/ethernetif.c.obj
+[509/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/os_xtensa.c.obj
+[510/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ap_config.c.obj
+[511/1275] Building C object esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/dhcpserver/dhcpserver.c.obj
+[512/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port/eloop.c.obj
+[513/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/sta_info.c.obj
+[514/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/ieee802_1x.c.obj
+[515/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/dragonfly.c.obj
+[516/1275] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_buffers.c.obj
+[517/1275] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log_freertos.c.obj
+[518/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth_ie.c.obj
+[519/1275] Building C object esp-idf/log/CMakeFiles/__idf_log.dir/log.c.obj
+[520/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[521/1275] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj
+[522/1275] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj
+[523/1275] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj
+[524/1275] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj
+[525/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[526/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj
+[527/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj
+[528/1275] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps.c.obj
+[529/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj
+[530/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj
+[531/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj
+[532/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/lcd_periph.c.obj
+[533/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2c_periph.c.obj
+[534/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/i2s_periph.c.obj
+[535/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/interrupts.c.obj
+[536/1275] Building C object esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/esp_netif_lwip.c.obj
+[537/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/ledc_periph.c.obj
+[538/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap/wpa_auth.c.obj
+[539/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj
+[540/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj
+[541/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj
+[542/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj
+[543/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdio_slave_periph.c.obj
+[544/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdmmc_periph.c.obj
+[545/1275] Creating directories for 'bootloader'
+[546/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/temperature_sensor_periph.c.obj
+[547/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/timer_periph.c.obj
+[548/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/touch_sensor_periph.c.obj
+[549/1275] No download step for 'bootloader'
+[550/1275] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/spi_periph.c.obj
+[551/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hkdf.c.obj
+[552/1275] No update step for 'bootloader'
+[553/1275] Building C object esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj
+[554/1275] No patch step for 'bootloader'
+[555/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/memory_buffer_alloc.c.obj
+[556/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/mps_reader.c.obj
+[557/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md5.c.obj
+[558/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/mps_trace.c.obj
+[559/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/hmac_drbg.c.obj
+[560/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/nist_kw.c.obj
+[561/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/error.c.obj
+[562/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/md.c.obj
+[563/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/padlock.c.obj
+[564/1275] Building C object esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common/sae.c.obj
+[565/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/gcm.c.obj
+[566/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pem.c.obj
+[567/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs12.c.obj
+[568/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/oid.c.obj
+[569/1275] Linking C static library esp-idf/wpa_supplicant/libwpa_supplicant.a
+[570/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkcs5.c.obj
+[571/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk.c.obj
+[572/1275] Linking C static library esp-idf/esp_netif/libesp_netif.a
+[573/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform.c.obj
+[574/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/poly1305.c.obj
+[575/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/platform_util.c.obj
+[576/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pk_wrap.c.obj
+[577/1275] Linking C static library esp-idf/lwip/liblwip.a
+[578/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkwrite.c.obj
+[579/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_client.c.obj
+[580/1275] Linking C static library esp-idf/vfs/libvfs.a
+[581/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_aead.c.obj
+[582/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/pkparse.c.obj
+[583/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_ecp.c.obj
+[584/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_cipher.c.obj
+[585/1275] Linking C static library esp-idf/esp_phy/libesp_phy.a
+[586/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_se.c.obj
+[587/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_hash.c.obj
+[588/1275] Linking C static library esp-idf/nvs_flash/libnvs_flash.a
+[589/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_driver_wrappers.c.obj
+[590/1275] Linking C static library esp-idf/esp_event/libesp_event.a
+[591/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_mac.c.obj
+[592/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ripemd160.c.obj
+[593/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_storage.c.obj
+[594/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_its_file.c.obj
+[595/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_slot_management.c.obj
+[596/1275] Linking C static library esp-idf/esp_timer/libesp_timer.a
+[597/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto_rsa.c.obj
+[598/1275] Linking C static library esp-idf/esp_common/libesp_common.a
+[599/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha1.c.obj
+[600/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/ssl_debug_helpers_generated.c.obj
+[601/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha256.c.obj
+[602/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa_alt_helpers.c.obj
+[603/1275] Linking C static library esp-idf/cxx/libcxx.a
+[604/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/sha512.c.obj
+[605/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/threading.c.obj
+[606/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/timing.c.obj
+[607/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version.c.obj
+[608/1275] Linking C static library esp-idf/newlib/libnewlib.a
+[609/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/version_features.c.obj
+[610/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.obj
+[611/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/aes/dma/esp_aes_gdma_impl.c.obj
+[612/1275] Linking C static library esp-idf/freertos/libfreertos.a
+[613/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/esp_hardware.c.obj
+[614/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj
+[615/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/esp_mem.c.obj
+[616/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.obj
+[617/1275] Linking C static library esp-idf/esp_hw_support/libesp_hw_support.a
+[618/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/esp_timing.c.obj
+[619/1275] Linking C static library esp-idf/soc/libsoc.a
+[620/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/aes/esp_aes_xts.c.obj
+[621/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/aes/esp_aes_common.c.obj
+[622/1275] Linking C static library esp-idf/heap/libheap.a
+[623/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/esp32s3/bignum.c.obj
+[624/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c.obj
+[625/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/sha/dma/sha.c.obj
+[626/1275] Linking C static library esp-idf/log/liblog.a
+[627/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.obj
+[628/1275] Linking C static library esp-idf/hal/libhal.a
+[629/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.obj
+[630/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/esp_bignum.c.obj
+[631/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.obj
+[632/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/Users/luyetong/esp/esp-idf/components/mbedtls/port/aes/dma/esp_aes.c.obj
+[633/1275] Linking C static library esp-idf/esp_rom/libesp_rom.a
+[634/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/rsa.c.obj
+[635/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy.c.obj
+[636/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/entropy_poll.c.obj
+[637/1275] Linking C static library esp-idf/esp_system/libesp_system.a
+[638/1275] Linking C static library esp-idf/pthread/libpthread.a
+[639/1275] Linking C static library esp-idf/spi_flash/libspi_flash.a
+[640/1275] Linking C static library esp-idf/app_update/libapp_update.a
+[641/1275] Linking C static library esp-idf/esp_partition/libesp_partition.a
+[642/1275] Building C object esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/psa_crypto.c.obj
+[643/1275] Linking C static library esp-idf/bootloader_support/libbootloader_support.a
+[644/1275] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[645/1275] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedtls.a
+[646/1275] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedx509.a
+[647/1275] Linking CXX static library esp-idf/mbedtls/mbedtls/library/libmbedcrypto.a
+[648/1275] Generating x509_crt_bundle
+[649/1275] Generating ../../x509_crt_bundle.S
+[650/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_5.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_5.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_5.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_5.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_5.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_5.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_5.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_5.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[651/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_1.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_1.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_1.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_1.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_1.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_1.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[652/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_3.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_3.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_3.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_3.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_3.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_3.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_3.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_3.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[653/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_4.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_4.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_4.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_4.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_4.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_4.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_4.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_4.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[654/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_2.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_2.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_2.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_2.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/label/lv_example_label_2.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_2.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_2.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/lv_example_label_2.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/label/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[655/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/meter/lv_example_meter_2.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/meter/lv_example_meter_2.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/meter/lv_example_meter_2.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/meter/lv_example_meter_2.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/meter/lv_example_meter_2.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/lv_example_meter_2.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/lv_example_meter_2.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/lv_example_meter_2.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/meter/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[656/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/list/lv_example_list_1.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/list/lv_example_list_1.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/list/lv_example_list_1.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/list/lv_example_list_1.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/list/lv_example_list_1.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/lv_example_list_1.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/lv_example_list_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/lv_example_list_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/list/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[657/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/line/lv_example_line_1.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/line/lv_example_line_1.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/line/lv_example_line_1.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/line/lv_example_line_1.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/line/lv_example_line_1.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/lv_example_line_1.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/lv_example_line_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/lv_example_line_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/line/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[658/1275] Building C object esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/led/lv_example_led_1.c.obj
+FAILED: esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/led/lv_example_led_1.c.obj 
+/Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc -DLV_CONF_INCLUDE_SIMPLE -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/config -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/src -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples -I/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/demos -I/Users/luyetong/esp/esp-idf/components/newlib/platform_include -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/Users/luyetong/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/Users/luyetong/esp/esp-idf/components/freertos/esp_additions/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/esp_hw_support/port/esp32s3/private_include -I/Users/luyetong/esp/esp-idf/components/heap/include -I/Users/luyetong/esp/esp-idf/components/log/include -I/Users/luyetong/esp/esp-idf/components/soc/include -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/. -I/Users/luyetong/esp/esp-idf/components/soc/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/hal/include -I/Users/luyetong/esp/esp-idf/components/hal/platform_port/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include -I/Users/luyetong/esp/esp-idf/components/esp_rom/include/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3 -I/Users/luyetong/esp/esp-idf/components/esp_common/include -I/Users/luyetong/esp/esp-idf/components/esp_system/include -I/Users/luyetong/esp/esp-idf/components/esp_system/port/soc -I/Users/luyetong/esp/esp-idf/components/esp_system/port/include/private -I/Users/luyetong/esp/esp-idf/components/xtensa/include -I/Users/luyetong/esp/esp-idf/components/xtensa/esp32s3/include -I/Users/luyetong/esp/esp-idf/components/lwip/include -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps -I/Users/luyetong/esp/esp-idf/components/lwip/include/apps/sntp -I/Users/luyetong/esp/esp-idf/components/lwip/lwip/src/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include -I/Users/luyetong/esp/esp-idf/components/lwip/port/esp32/include/arch -I/Users/luyetong/esp/esp-idf/components/esp_timer/include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3=. -fmacro-prefix-map=/Users/luyetong/esp/esp-idf=/IDF -fstrict-volatile-bitfields -Wno-error=unused-but-set-variable -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -std=gnu17 -Wno-old-style-declaration -D_GNU_SOURCE -DIDF_VER=\"v5.0-dirty\" -DESP_PLATFORM -D_POSIX_READER_WRITER_LOCKS -Wno-unused-variable -Wno-format -MD -MT esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/led/lv_example_led_1.c.obj -MF esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/led/lv_example_led_1.c.obj.d -o esp-idf/lvgl/CMakeFiles/__idf_lvgl.dir/examples/widgets/led/lv_example_led_1.c.obj -c /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/lv_example_led_1.c
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/../../../lvgl.h:64,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/lv_example_led_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/../../../src/widgets/meter/lv_meter.h:22:2: error: #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+   22 | #error "lv_meter: Complex drawing is required. Enable it in lv_conf.h (LV_USE_DRAW_MASKS 1)"
+      |  ^~~~~
+In file included from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/../../lv_examples.h:16,
+                 from /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/lv_example_led_1.c:1:
+/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/components/lvgl/examples/widgets/led/../../../lvgl.h:121:2: warning: #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h" [-Wcpp]
+  121 | #warning "You are using the development version of LVGL which is not stable at this moment. For production use the release/v8.3 branch. To silence this warning add #define LV_USE_DEV_VERSION to lv_conf.h"
+      |  ^~~~~~~
+[659/1275] Performing configure step for 'bootloader'
+-- Found Git: /usr/bin/git (found version "2.30.1 (Apple Git-130)") 
+-- The C compiler identification is GNU 11.2.0
+-- The CXX compiler identification is GNU 11.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-gcc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Users/luyetong/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin/xtensa-esp32s3-elf-g++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32s3
+-- Project sdkconfig file /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/sdkconfig
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of time_t
+-- Check size of time_t - done
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- App "bootloader" version: v5.0-dirty
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+-- Adding linker script /Users/luyetong/esp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: /Users/luyetong/esp/esp-idf/components/bootloader /Users/luyetong/esp/esp-idf/components/bootloader_support /Users/luyetong/esp/esp-idf/components/efuse /Users/luyetong/esp/esp-idf/components/esp_app_format /Users/luyetong/esp/esp-idf/components/esp_common /Users/luyetong/esp/esp-idf/components/esp_hw_support /Users/luyetong/esp/esp-idf/components/esp_rom /Users/luyetong/esp/esp-idf/components/esp_system /Users/luyetong/esp/esp-idf/components/esptool_py /Users/luyetong/esp/esp-idf/components/freertos /Users/luyetong/esp/esp-idf/components/hal /Users/luyetong/esp/esp-idf/components/log /Users/luyetong/esp/esp-idf/components/bootloader/subproject/main /Users/luyetong/esp/esp-idf/components/bootloader/subproject/components/micro-ecc /Users/luyetong/esp/esp-idf/components/newlib /Users/luyetong/esp/esp-idf/components/partition_table /Users/luyetong/esp/esp-idf/components/soc /Users/luyetong/esp/esp-idf/components/spi_flash /Users/luyetong/esp/esp-idf/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader
+ninja: build stopped: subcommand failed.

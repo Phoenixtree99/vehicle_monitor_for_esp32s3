@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader/esp-idf/cmake_install.cmake")
+  include("/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/Users/luyetong/esp/esp-idf/components/bootloader/subproject"
-  "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader"
-  "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix"
-  "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/tmp"
-  "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src"
-  "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader"
+  "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix"
+  "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/tmp"
+  "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src"
+  "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

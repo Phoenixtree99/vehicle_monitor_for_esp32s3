@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
+  include("/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/esp-idf/mbedtls/mbedtls/cmake_install.cmake")
 endif()
 

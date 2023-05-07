@@ -1,4 +1,4 @@
-# Install script for directory: /Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/main
+# Install script for directory: /Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/CMakeFiles/bootloader"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/CMakeFiles/bootloader.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/Users/luyetong/ESP32Code/VehicleMonitor/uart_async_rxtxtasks/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/Users/luyetong/ESP32Code/vehicle_monitor_for_esp32s3/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 
